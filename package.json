@@ -11,8 +11,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set HTTPS=true&&react-scripts start",
     "build": "react-scripts build",
+    "postinstall": "sh install_cert.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
